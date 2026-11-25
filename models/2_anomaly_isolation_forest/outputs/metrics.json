@@ -1,0 +1,33 @@
+{
+  "provenance": {
+    "run_time": "2026-11-26T02:01:27",
+    "preprocessing_version": "v1",
+    "device": "CPU",
+    "source": "huggingface.co/datasets/tejhq/indian-markets (prices_adjusted, actions; NSE EQ)",
+    "scikit-learn": "1.8.0"
+  },
+  "note": "Unsupervised model with no labelled anomalies, so accuracy, precision and recall cannot be measured.",
+  "score_definition": "scikit-learn score_samples: lower means more unusual; not a probability",
+  "symbols_modelled": 100,
+  "symbols_skipped": [],
+  "rows_scored": 93689,
+  "rows_flagged": 1885,
+  "flag_rate": 0.0201,
+  "median_abs_return_pct_flagged_vs_normal": [
+    4.62,
+    0.86
+  ],
+  "median_volume_z_flagged_vs_normal": [
+    6.89,
+    -0.29
+  ],
+  "mean_flag_overlap_between_seeds": 0.9063,
+  "flagged_rows_on_corporate_action_dates": 15,
+  "data_quality": {
+    "rows": 95697,
+    "duplicate_symbol_date_rows_removed": 0,
+    "invalid_price_or_volume_rows_removed": 0,
+    "returns_excluded_gap_or_unscaled_action": 8,
+    "abs_return_over_20pct_remaining": 5
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "run_time": "2026-11-26T02:49:39",
+  "test_type": "synthetic injected shocks",
+  "selected_on_validation_f1": "isolation_forest_richer_features",
+  "score_definition": "higher means more unusual; not a probability",
+  "results": [
+    {
+      "model": "isolation_forest_spec",
+      "validation_accuracy": 0.9756,
+      "validation_precision": 0.433,
+      "validation_recall": 0.704,
+      "validation_f1": 0.536,
+      "validation_mean_average_precision": 0.586,
+      "validation_accuracy_if_nothing_is_flagged": 0.98,
+      "test_accuracy": 0.9727,
+      "test_precision": 0.403,
+      "test_recall": 0.751,
+      "test_f1": 0.524,
+      "test_mean_average_precision": 0.586,
+      "test_accuracy_if_nothing_is_flagged": 0.98
+    },
+    {
+      "model": "isolation_forest_richer_features",
+      "validation_accuracy": 0.9786,
+      "validation_precision": 0.475,
+      "validation_recall": 0.659,
+      "validation_f1": 0.552,
+      "validation_mean_average_precision": 0.624,
+      "validation_accuracy_if_nothing_is_flagged": 0.98,
+      "test_accuracy": 0.9769,
+      "test_precision": 0.445,
+      "test_recall": 0.635,
+      "test_f1": 0.523,
+      "test_mean_average_precision": 0.613,
+      "test_accuracy_if_nothing_is_flagged": 0.98
+    },
+    {
+      "model": "local_outlier_factor",
+      "validation_accuracy": 0.9736,
+      "validation_precision": 0.39,
+      "validation_recall": 0.571,
+      "validation_f1": 0.464,
+      "validation_mean_average_precision": 0.504,
+      "validation_accuracy_if_nothing_is_flagged": 0.98,
+      "test_accuracy": 0.9772,
+      "test_precision": 0.45,
+      "test_recall": 0.637,
+      "test_f1": 0.527,
+      "test_mean_average_precision": 0.558,
+      "test_accuracy_if_nothing_is_flagged": 0.98
+    },
+    {
+      "model": "one_class_svm",
+      "validation_accuracy": 0.912,
+      "validation_precision": 0.179,
+      "validation_recall": 0.949,
+      "validation_f1": 0.301,
+      "validation_mean_average_precision": 0.585,
+      "validation_accuracy_if_nothing_is_flagged": 0.98,
+      "test_accuracy": 0.9298,
+      "test_precision": 0.211,
+      "test_recall": 0.916,
+      "test_f1": 0.343,
+      "test_mean_average_precision": 0.649,
+      "test_accuracy_if_nothing_is_flagged": 0.98
+    }
+  ]
+}
