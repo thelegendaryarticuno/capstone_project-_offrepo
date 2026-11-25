@@ -1,0 +1,7 @@
+model,validation_rmse,validation_mae,validation_median_abs_pct_error,test_rmse,test_mae,test_median_abs_pct_error,test_regime_accuracy,test_regime_macro_f1
+trailing_30d,11.493,8.188,27.59,11.295,8.464,27.31,0.466,0.464
+garch,13.009,8.74,30.03,10.907,8.433,28.2,0.442,0.441
+gjr_garch,14.344,8.754,29.82,10.835,8.365,27.62,0.445,0.442
+har_range,10.222,7.305,26.12,10.215,7.643,26.0,0.479,0.475
+boosting,10.034,6.905,23.96,10.555,7.68,25.4,0.468,0.464
+ensemble_garch_har_boosting,10.224,7.264,25.68,10.057,7.551,25.22,0.479,0.477
