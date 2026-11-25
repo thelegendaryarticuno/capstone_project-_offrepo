@@ -1,0 +1,8 @@
+fastapi>=0.115
+uvicorn>=0.30
+numpy>=2.0
+pandas>=2.2
+joblib==1.5.3
+scikit-learn==1.8.0      # must match the version the .joblib models were saved with
+torch>=2.9               # CPU build is enough; the model was saved on CUDA and is mapped to CPU on load
+transformers==5.24.1     # must match the saved DistilBERT model
