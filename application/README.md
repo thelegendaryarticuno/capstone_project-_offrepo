@@ -11,19 +11,30 @@ React + Tailwind (Vite :5173) --/api/v1--> Express (:4000) --REST--> FastAPI ML 
 |---|---|
 | `frontend/` | Login, Dashboard, Portfolio, Risk Lab, AI Insights. UI built on 21st.dev components (`src/components/ui/sidebar.tsx`, `login-card.tsx`, shadcn button/card/input) |
 | `backend/` | Express REST API: portfolios, transactions, CSV import, demo portfolio, market data, risk analytics (SDD 4.4), proxies the 3 ML outputs and logs each run in `model_runs` |
-| `ml-service/` | FastAPI: `/ml/garch`, `/ml/anomalies`, `/ml/sentiment` (**dummy numbers, final schemas**) |
+| `ml-service/` | FastAPI: `/ml/volatility` (gradient boosting), `/ml/anomalies` (Isolation Forest per stock), `/ml/sentiment` (DistilBERT), `/health` with model cards |
 | `database/` | all `.db` files (created on first start) |
-| `../models/` | future `.joblib` artifacts (see `models/README.md`) |
+| `ml-service/models/` | `manifest.json` + `MODEL_CARDS.md` in git; the `.joblib` files come from the `models-v1.0.0` release via `scripts/fetch-models.ps1` |
 
-## Run (3 terminals)
+## Setup and run
+
+One command (Windows) creates the Python venv, installs all packages, downloads the models and checks `.env`:
 
 ```powershell
-cd ml-service; pip install -r requirements.txt; python -m uvicorn main:app --port 8000
-cd backend;    npm i; npm run dev
-cd frontend;   npm i; npm run dev        # http://localhost:5173
+.\scripts\setup.ps1          # or double-click scripts\setup.bat
+.\scripts\setup.ps1 -Start   # same, then opens the 3 servers in their own windows
 ```
 
-Tests: `cd backend; npm test` (the AI test needs the ML service running) and `cd ml-service; python -m pytest`.
+Before the first run, put `application/.env` (see `.env.example`) and the Firebase service-account JSON in `application/secrets/`. Neither is committed.
+
+Manual start (3 terminals):
+
+```powershell
+cd application/ml-service; .\.venv\Scripts\python -m uvicorn main:app --port 8000
+cd application/backend;    npm run dev
+cd application/frontend;   npm run dev        # http://localhost:5173
+```
+
+Tests: `cd backend; npm test` (the AI test needs the ML service running) and `cd ml-service; .\.venv\Scripts\python -m pytest`.
 
 Firebase console → Authentication → Sign-in method: enable **Email/Password** and **Google**; Authorized domains must include `localhost`.
 
