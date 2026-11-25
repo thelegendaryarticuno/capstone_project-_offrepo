@@ -1,0 +1,72 @@
+{
+  "run_time": "2026-11-26T02:47:20",
+  "selected_on_validation_rmse": "boosting",
+  "results": [
+    {
+      "model": "trailing_30d",
+      "validation_rmse": 11.493,
+      "validation_mae": 8.188,
+      "validation_median_abs_pct_error": 27.59,
+      "test_rmse": 11.295,
+      "test_mae": 8.464,
+      "test_median_abs_pct_error": 27.31,
+      "test_regime_accuracy": 0.466,
+      "test_regime_macro_f1": 0.464
+    },
+    {
+      "model": "garch",
+      "validation_rmse": 13.009,
+      "validation_mae": 8.74,
+      "validation_median_abs_pct_error": 30.03,
+      "test_rmse": 10.907,
+      "test_mae": 8.433,
+      "test_median_abs_pct_error": 28.2,
+      "test_regime_accuracy": 0.442,
+      "test_regime_macro_f1": 0.441
+    },
+    {
+      "model": "gjr_garch",
+      "validation_rmse": 14.344,
+      "validation_mae": 8.754,
+      "validation_median_abs_pct_error": 29.82,
+      "test_rmse": 10.835,
+      "test_mae": 8.365,
+      "test_median_abs_pct_error": 27.62,
+      "test_regime_accuracy": 0.445,
+      "test_regime_macro_f1": 0.442
+    },
+    {
+      "model": "har_range",
+      "validation_rmse": 10.222,
+      "validation_mae": 7.305,
+      "validation_median_abs_pct_error": 26.12,
+      "test_rmse": 10.215,
+      "test_mae": 7.643,
+      "test_median_abs_pct_error": 26.0,
+      "test_regime_accuracy": 0.479,
+      "test_regime_macro_f1": 0.475
+    },
+    {
+      "model": "boosting",
+      "validation_rmse": 10.034,
+      "validation_mae": 6.905,
+      "validation_median_abs_pct_error": 23.96,
+      "test_rmse": 10.555,
+      "test_mae": 7.68,
+      "test_median_abs_pct_error": 25.4,
+      "test_regime_accuracy": 0.468,
+      "test_regime_macro_f1": 0.464
+    },
+    {
+      "model": "ensemble_garch_har_boosting",
+      "validation_rmse": 10.224,
+      "validation_mae": 7.264,
+      "validation_median_abs_pct_error": 25.68,
+      "test_rmse": 10.057,
+      "test_mae": 7.551,
+      "test_median_abs_pct_error": 25.22,
+      "test_regime_accuracy": 0.479,
+      "test_regime_macro_f1": 0.477
+    }
+  ]
+}
