@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+secrets/
+database/*.db*
+__pycache__/
+.pytest_cache/
+
+# trained model artifacts are shared outside git (too large for GitHub)
+ml-service/models/*.joblib
+ml-service/models/*.pkl
