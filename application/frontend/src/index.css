@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* shadcn-style tokens as full colors (the 21st.dev sidebar reads var(--background) directly) */
+:root {
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  --card: #ffffff;
+  --card-foreground: #1c1917;
+  --muted: #f5f5f4;
+  --muted-foreground: #78716c;
+  --accent: #f5f5f4;
+  --accent-foreground: #1c1917;
+  --primary: #4338ca;
+  --primary-foreground: #ffffff;
+  --secondary: #eef2ff;
+  --secondary-foreground: #3730a3;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e7e5e4;
+  --input: #d6d3d1;
+  --ring: #6366f1;
+  --up: #059669;
+  --down: #dc2626;
+  --warn: #d97706;
+  --chart-1: #4338ca;
+  --chart-2: #0891b2;
+  --chart-3: #d97706;
+  --chart-4: #db2777;
+  --chart-5: #65a30d;
+}
+.dark {
+  --background: #0c0a09;
+  --foreground: #f5f5f4;
+  --card: #151311;
+  --card-foreground: #f5f5f4;
+  --muted: #1c1917;
+  --muted-foreground: #a8a29e;
+  --accent: #292524;
+  --accent-foreground: #f5f5f4;
+  --primary: #818cf8;
+  --primary-foreground: #0c0a09;
+  --secondary: #1e1b4b;
+  --secondary-foreground: #c7d2fe;
+  --destructive: #f87171;
+  --destructive-foreground: #0c0a09;
+  --border: #292524;
+  --input: #44403c;
+  --ring: #818cf8;
+  --up: #34d399;
+  --down: #f87171;
+  --warn: #fbbf24;
+  --chart-1: #818cf8;
+  --chart-2: #22d3ee;
+  --chart-3: #fbbf24;
+  --chart-4: #f472b6;
+  --chart-5: #a3e635;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-up: var(--up);
+  --color-down: var(--down);
+  --color-warn: var(--warn);
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  * { border-color: var(--border); }
+  body { background: var(--background); color: var(--foreground); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+}
+
+/* Thin, light scrollbars everywhere (Firefox + Chromium/WebKit) */
+* { scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--foreground) 16%, transparent) transparent; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner { background: transparent; }
+::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--foreground) 16%, transparent); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: color-mix(in srgb, var(--foreground) 30%, transparent); }
+::-webkit-scrollbar-button { display: none; }
+
+.recharts-cartesian-grid line { stroke: var(--border); }
+.recharts-text { fill: var(--muted-foreground); font-size: 11px; }
