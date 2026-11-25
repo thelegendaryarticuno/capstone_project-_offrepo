@@ -22,6 +22,7 @@
 | `Dockerfile.nginx` | Gateway image with `nginx/gateway.conf` |
 | `nginx/gateway.conf` | Routes `/` → frontend, `/api/` → backend, `/ml/health` → ML; other `/ml/*` blocked |
 | `nginx/frontend.conf` | SPA fallback + long cache for hashed assets |
+| `../scripts/fetch-models.ps1` | Downloads the 3 model files from the `models-v1.0.0` release and checks SHA-256 |
 | `Jenkinsfile` | Preflight → tests (parallel) → build 4 images → deploy → smoke test → automatic rollback |
 
 ## Jenkins
@@ -29,6 +30,7 @@
 Job **`sprpa-pipeline`** (Pipeline from SCM, script path `deployment/Jenkinsfile`)
 fetches **only `master`** (refspec `+refs/heads/master`) and polls it every ~2 minutes.
 Pushes to `development`, `naman`, `manav`, `rishabh` and `anupam` are never fetched, so they never build.
+Stages: preflight → fetch models (cached in `C:\ProgramData\Jenkins\sprpa-models-cache`) → tests → build → deploy → smoke test.
 Flow: feature branch → PR to `development` → PR to `master` → Jenkins deploys.
 
 ### Credentials (Manage Jenkins → Credentials → System → Global credentials → Add)
@@ -36,7 +38,7 @@ Flow: feature branch → PR to `development` → PR to `master` → Jenkins depl
 | ID | Kind | Value |
 |---|---|---|
 | `sprpa-env` | Secret file | `application/.env` |
-| `sprpa-firebase-sa` | Secret file | the Firebase service-account JSON from `application/secrets/` |
+| `sprpa-firebase` | Secret file | the Firebase service-account JSON from `application/secrets/` |
 | `sprpa-ml-internal-key` | Secret text | a random string, e.g. `-join ((48..57)+(97..102) \| Get-Random -Count 32 \| % {[char]$_})` |
 
 Secrets never enter an image or the repo: `.env` and the service account are BuildKit secrets at build time,
