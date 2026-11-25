@@ -1,0 +1,79 @@
+{
+  "provenance": {
+    "run_time": "2026-11-26T02:02:50",
+    "preprocessing_version": "v1",
+    "device": "CPU",
+    "source": "github.com/Sid-istic/financial-news-sentiment-dataset- (CC BY 4.0)"
+  },
+  "headline_rows": 6910,
+  "headline_rows_after_cleaning": 6812,
+  "tickers_scored": 100,
+  "latest_headline_date": "2025-07-02",
+  "labelled_rows": 50,
+  "majority_class_baseline_accuracy": 0.5,
+  "label_caveat": "Only 50 reviewed labels are published, all rows the source model had called neutral; not a representative sample.",
+  "vader_standard": {
+    "accuracy": 0.52,
+    "accuracy_95pct_interval": [
+      0.385,
+      0.652
+    ],
+    "macro_f1": 0.488,
+    "confusion_matrix_rows_true_cols_pred": {
+      "order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          4,
+          1,
+          7
+        ],
+        [
+          1,
+          16,
+          8
+        ],
+        [
+          1,
+          6,
+          6
+        ]
+      ]
+    }
+  },
+  "vader_finance_lexicon": {
+    "accuracy": 0.66,
+    "accuracy_95pct_interval": [
+      0.522,
+      0.776
+    ],
+    "macro_f1": 0.656,
+    "confusion_matrix_rows_true_cols_pred": {
+      "order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          8,
+          1,
+          3
+        ],
+        [
+          1,
+          17,
+          7
+        ],
+        [
+          1,
+          4,
+          8
+        ]
+      ]
+    }
+  }
+}

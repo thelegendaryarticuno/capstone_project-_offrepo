@@ -1,0 +1,161 @@
+// SPRPA CI/CD — runs on the Windows Jenkins agent with Docker Desktop.
+// Builds only from master: the job's branch spec is */master and the Deploy stage double-checks it.
+//
+// Jenkins credentials (Manage Jenkins > Credentials > System > Global):
+//   sprpa-env              Secret file   application/.env (Firebase web config, project id)
+//   sprpa-firebase         Secret file   Firebase service-account JSON
+//   sprpa-ml-internal-key  Secret text   shared key between backend and ML service
+
+pipeline {
+  agent any
+  options {
+    disableConcurrentBuilds()
+    timestamps()
+    buildDiscarder(logRotator(numToKeepStr: '15'))
+    timeout(time: 45, unit: 'MINUTES')
+  }
+  triggers { pollSCM('H/2 * * * *') }   // GitHub webhooks can't reach localhost; poll master every ~2 min
+  environment {
+    // Jenkins runs as LocalSystem; Docker Desktop is a per-user install, so point at its CLI explicitly.
+    // Override DOCKER_HOME in Manage Jenkins > System > Global properties if Docker Desktop lives elsewhere.
+    DOCKER_HOME   = "${env.DOCKER_HOME ?: 'C:\\Users\\thele\\AppData\\Local\\Programs\\DockerDesktop\\resources'}"
+    PATH          = "${DOCKER_HOME}\\bin;${env.PATH}"
+    DOCKER_CONFIG = 'C:\\ProgramData\\Jenkins\\.docker-sprpa'   // Jenkins-only Docker config (buildx plugin dir, no registry logins)
+    DOCKER_BUILDKIT = '1'
+    TAG      = "${env.BUILD_NUMBER}"
+    NET      = 'sprpa-net'
+    VOLUME   = 'sprpa-data'
+    PUBLIC   = 'http://localhost:8080'
+    MODEL_CACHE = 'C:\\ProgramData\\Jenkins\\sprpa-models-cache'   // verified models survive workspace wipes
+  }
+
+  stages {
+    stage('Preflight') {
+      steps {
+        powershell '''
+          New-Item -ItemType Directory -Force $env:DOCKER_CONFIG | Out-Null
+          @{ cliPluginsExtraDirs = @("$env:DOCKER_HOME\\cli-plugins") } | ConvertTo-Json | Set-Content -Encoding ascii "$env:DOCKER_CONFIG\\config.json"
+        '''
+        bat 'docker version --format "Docker {{.Server.Version}}" && docker buildx version'
+        bat 'git log -1 --format="%%h %%an: %%s"'
+      }
+    }
+
+    stage('Fetch models') {
+      // Model files live in the GitHub release named in manifest.json (too big for git); hash-checked and cached.
+      steps { powershell '& .\\scripts\\fetch-models.ps1 -CacheDir $env:MODEL_CACHE' }
+    }
+
+    stage('Test') {
+      parallel {
+        stage('ML tests') {
+          steps { bat 'docker build -f deployment/Dockerfile.ml --target test -t sprpa-ml:test .' }
+        }
+        stage('Backend tests') {
+          steps {
+            withCredentials([file(credentialsId: 'sprpa-firebase', variable: 'SA_FILE')]) {
+              bat 'docker build -f deployment/Dockerfile.backend --target test --secret id=firebase_sa,src="%SA_FILE%" -t sprpa-backend:test .'
+            }
+          }
+        }
+      }
+    }
+
+    stage('Build images') {
+      steps {
+        withCredentials([file(credentialsId: 'sprpa-env', variable: 'ENV_FILE')]) {
+          bat 'docker build -f deployment/Dockerfile.ml       --target runtime -t sprpa-ml:%TAG% .'
+          bat 'docker build -f deployment/Dockerfile.backend  --target runtime -t sprpa-backend:%TAG% .'
+          bat 'docker build -f deployment/Dockerfile.frontend --secret id=env,src="%ENV_FILE%" -t sprpa-frontend:%TAG% .'
+          bat 'docker build -f deployment/Dockerfile.nginx    -t sprpa-nginx:%TAG% .'
+        }
+      }
+    }
+
+    stage('Deploy') {
+      when { expression { (env.GIT_BRANCH ?: '').endsWith('master') } }
+      steps {
+        script {
+          // remember what is running now, for rollback
+          def running = bat(returnStdout: true, script: '@docker inspect -f "{{.Config.Image}}" sprpa-backend 2>nul || exit /b 0').trim().tokenize(':')
+          env.PREV = running.size() > 1 ? running[1] : ''
+          deploy(env.TAG)
+          if (!smoke()) {
+            if (env.PREV) {
+              echo "Smoke test failed, rolling back to build ${env.PREV}"
+              deploy(env.PREV)
+            }
+            error('Deployment failed smoke tests')
+          }
+        }
+      }
+    }
+  }
+
+  post {
+    success { echo "SPRPA build ${env.TAG} is live at ${env.PUBLIC}" }
+    failure { bat 'docker ps -a --filter "name=sprpa-" --format "table {{.Names}}\\t{{.Image}}\\t{{.Status}}"' }
+    always  {
+      // keep the last 3 tagged builds of each image, drop test images and dangling layers
+      powershell '''
+        foreach ($s in "ml","backend","frontend","nginx") {
+          docker images "sprpa-$s" --format "{{.Tag}}" | Where-Object { $_ -match '^\\d+$' } | Sort-Object { [int]$_ } -Descending | Select-Object -Skip 3 | ForEach-Object { docker rmi "sprpa-${s}:$_" 2>$null }
+        }
+        docker rmi sprpa-ml:test sprpa-backend:test 2>$null
+        docker image prune -f | Out-Null
+        exit 0
+      '''
+    }
+  }
+}
+
+// (Re)create all four containers from image tag `t` on one private network; only nginx is published.
+def deploy(String t) {
+  withCredentials([
+    file(credentialsId: 'sprpa-env', variable: 'ENV_FILE'),
+    file(credentialsId: 'sprpa-firebase', variable: 'SA_FILE'),
+    string(credentialsId: 'sprpa-ml-internal-key', variable: 'ML_KEY'),
+  ]) {
+    withEnv(["T=${t}"]) {
+      bat '''
+        @echo off
+        docker network inspect %NET% >nul 2>&1 || docker network create %NET%
+        docker volume create %VOLUME% >nul
+        docker rm -f sprpa-nginx sprpa-frontend sprpa-backend sprpa-ml >nul 2>&1
+
+        docker run -d --name sprpa-ml --network %NET% --restart unless-stopped ^
+          -e ML_INTERNAL_KEY=%ML_KEY% sprpa-ml:%T% || exit /b 1
+
+        docker create --name sprpa-backend --network %NET% --restart unless-stopped ^
+          -v %VOLUME%:/data --env-file "%ENV_FILE%" ^
+          -e PORT=4000 -e DB_FILE=/data/sprpa.db -e FIREBASE_SA_FILE=/run/secrets/firebase.json ^
+          -e ML_URL=http://sprpa-ml:8000 -e ML_INTERNAL_KEY=%ML_KEY% -e CORS_ORIGIN=%PUBLIC% ^
+          sprpa-backend:%T% || exit /b 1
+        docker cp "%SA_FILE%" sprpa-backend:/run/secrets/firebase.json || exit /b 1
+        docker start sprpa-backend || exit /b 1
+
+        docker run -d --name sprpa-frontend --network %NET% --restart unless-stopped sprpa-frontend:%T% || exit /b 1
+        docker run -d --name sprpa-nginx --network %NET% --restart unless-stopped -p 8080:80 sprpa-nginx:%T% || exit /b 1
+      '''
+    }
+  }
+}
+
+// Gateway, frontend, backend (+DB, +ML) must all answer through nginx within ~3 min (ML loads ~30 s of models).
+def smoke() {
+  return powershell(returnStatus: true, script: '''
+    $checks = @("$env:PUBLIC/nginx-health", "$env:PUBLIC/", "$env:PUBLIC/ml/health", "$env:PUBLIC/api/v1/health")
+    for ($i = 0; $i -lt 60; $i++) {
+      $ok = $true
+      foreach ($u in $checks) { try { Invoke-WebRequest -UseBasicParsing -TimeoutSec 3 $u | Out-Null } catch { $ok = $false } }
+      if ($ok) {
+        $r = Invoke-RestMethod "$env:PUBLIC/api/v1/ready"
+        Write-Output "ready: db=$($r.db) ml=$($r.ml)"
+        if ($r.db -eq "ok" -and $r.ml -eq "ok") { exit 0 }
+      }
+      Start-Sleep -Seconds 3
+    }
+    docker logs --tail 40 sprpa-backend
+    exit 1
+  ''') == 0
+}

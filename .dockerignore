@@ -1,0 +1,13 @@
+**/node_modules
+**/dist
+**/__pycache__
+**/.pytest_cache
+**/.env
+**/.env.*
+!**/.env.example
+**/secrets
+**/*.db
+**/*.db-*
+.git
+.claude
+documents

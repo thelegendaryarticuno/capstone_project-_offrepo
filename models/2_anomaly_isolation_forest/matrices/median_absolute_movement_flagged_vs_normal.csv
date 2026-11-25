@@ -1,0 +1,3 @@
+group,daily_return_pct,volume_zscore,intraday_range_pct,opening_gap_pct
+normal,0.864,0.575,2.056,0.31
+anomaly,4.624,6.893,5.142,0.924
