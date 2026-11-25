@@ -3,7 +3,7 @@
 //
 // Jenkins credentials (Manage Jenkins > Credentials > System > Global):
 //   sprpa-env              Secret file   application/.env (Firebase web config, project id)
-//   sprpa-firebase-sa      Secret file   Firebase service-account JSON
+//   sprpa-firebase         Secret file   Firebase service-account JSON
 //   sprpa-ml-internal-key  Secret text   shared key between backend and ML service
 
 pipeline {
@@ -26,6 +26,7 @@ pipeline {
     NET      = 'sprpa-net'
     VOLUME   = 'sprpa-data'
     PUBLIC   = 'http://localhost:8080'
+    MODEL_CACHE = 'C:\\ProgramData\\Jenkins\\sprpa-models-cache'   // verified models survive workspace wipes
   }
 
   stages {
@@ -40,6 +41,11 @@ pipeline {
       }
     }
 
+    stage('Fetch models') {
+      // Model files live in the GitHub release named in manifest.json (too big for git); hash-checked and cached.
+      steps { powershell '& .\\scripts\\fetch-models.ps1 -CacheDir $env:MODEL_CACHE' }
+    }
+
     stage('Test') {
       parallel {
         stage('ML tests') {
@@ -47,7 +53,7 @@ pipeline {
         }
         stage('Backend tests') {
           steps {
-            withCredentials([file(credentialsId: 'sprpa-firebase-sa', variable: 'SA_FILE')]) {
+            withCredentials([file(credentialsId: 'sprpa-firebase', variable: 'SA_FILE')]) {
               bat 'docker build -f deployment/Dockerfile.backend --target test --secret id=firebase_sa,src="%SA_FILE%" -t sprpa-backend:test .'
             }
           }
@@ -107,7 +113,7 @@ pipeline {
 def deploy(String t) {
   withCredentials([
     file(credentialsId: 'sprpa-env', variable: 'ENV_FILE'),
-    file(credentialsId: 'sprpa-firebase-sa', variable: 'SA_FILE'),
+    file(credentialsId: 'sprpa-firebase', variable: 'SA_FILE'),
     string(credentialsId: 'sprpa-ml-internal-key', variable: 'ML_KEY'),
   ]) {
     withEnv(["T=${t}"]) {
@@ -135,11 +141,11 @@ def deploy(String t) {
   }
 }
 
-// Gateway, frontend, backend (+DB, +ML) must all answer through nginx within ~90 s.
+// Gateway, frontend, backend (+DB, +ML) must all answer through nginx within ~3 min (ML loads ~30 s of models).
 def smoke() {
   return powershell(returnStatus: true, script: '''
     $checks = @("$env:PUBLIC/nginx-health", "$env:PUBLIC/", "$env:PUBLIC/ml/health", "$env:PUBLIC/api/v1/health")
-    for ($i = 0; $i -lt 30; $i++) {
+    for ($i = 0; $i -lt 60; $i++) {
       $ok = $true
       foreach ($u in $checks) { try { Invoke-WebRequest -UseBasicParsing -TimeoutSec 3 $u | Out-Null } catch { $ok = $false } }
       if ($ok) {
