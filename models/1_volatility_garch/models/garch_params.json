@@ -1,0 +1,2602 @@
+{
+ "ACC": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 27.038048382270652,
+  "forecast_10d_cumulative_vol_pct": 5.386108161176234,
+  "daily_vol_path_pct": [
+   1.6524,
+   1.6841,
+   1.6999,
+   1.7078,
+   1.7118,
+   1.7138,
+   1.7148,
+   1.7153,
+   1.7156,
+   1.7157
+  ],
+  "params": {
+   "mu": -0.09498299954500243,
+   "omega": 1.4582513470884846,
+   "alpha[1]": 0.33011666475593726,
+   "beta[1]": 0.17456594753519394
+  },
+  "converged": true
+ },
+ "ADANIENSOL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 40.14841263849435,
+  "forecast_10d_cumulative_vol_pct": 7.9977552341484985,
+  "daily_vol_path_pct": [
+   2.2108,
+   2.2972,
+   2.3757,
+   2.4474,
+   2.5131,
+   2.5735,
+   2.6292,
+   2.6806,
+   2.7281,
+   2.7722
+  ],
+  "params": {
+   "mu": 0.06874887337726818,
+   "omega": 0.6705540837221031,
+   "alpha[1]": 0.14641431533626956,
+   "beta[1]": 0.79605906484139
+  },
+  "converged": true
+ },
+ "ADANIPORTS": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 32.83396325096425,
+  "forecast_10d_cumulative_vol_pct": 6.540682039231099,
+  "daily_vol_path_pct": [
+   1.6973,
+   1.9813,
+   2.0769,
+   2.1112,
+   2.1238,
+   2.1285,
+   2.1302,
+   2.1309,
+   2.1311,
+   2.1312
+  ],
+  "params": {
+   "mu": 0.041047137716247586,
+   "omega": 2.8560847841619736,
+   "alpha[1]": 0.3631418957100724,
+   "beta[1]": 0.008079537912906696
+  },
+  "converged": true
+ },
+ "AMBUJACEM": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 30.90118569763364,
+  "forecast_10d_cumulative_vol_pct": 6.155663534694418,
+  "daily_vol_path_pct": [
+   1.9345,
+   1.9392,
+   1.9428,
+   1.9456,
+   1.9477,
+   1.9493,
+   1.9505,
+   1.9514,
+   1.9521,
+   1.9527
+  ],
+  "params": {
+   "mu": -0.08140203451871848,
+   "omega": 0.8956579387155545,
+   "alpha[1]": 0.20435916314349387,
+   "beta[1]": 0.5611764959416248
+  },
+  "converged": true
+ },
+ "APOLLOHOSP": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 23.87101439803864,
+  "forecast_10d_cumulative_vol_pct": 4.7552198903948355,
+  "daily_vol_path_pct": [
+   1.5681,
+   1.55,
+   1.5335,
+   1.5185,
+   1.5047,
+   1.4923,
+   1.4809,
+   1.4706,
+   1.4613,
+   1.4528
+  ],
+  "params": {
+   "mu": 0.09795120785697431,
+   "omega": 0.18484701576741847,
+   "alpha[1]": 0.026766119821373436,
+   "beta[1]": 0.8750919375018976
+  },
+  "converged": true
+ },
+ "APOLLOTYRE": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 27.978576621011705,
+  "forecast_10d_cumulative_vol_pct": 5.573465870981266,
+  "daily_vol_path_pct": [
+   1.7076,
+   1.7617,
+   1.7685,
+   1.7693,
+   1.7694,
+   1.7695,
+   1.7695,
+   1.7695,
+   1.7695,
+   1.7695
+  ],
+  "params": {
+   "mu": 0.01830074441311893,
+   "omega": 2.733917929826106,
+   "alpha[1]": 0.07533666810517256,
+   "beta[1]": 0.05147638292270884
+  },
+  "converged": true
+ },
+ "ASHOKLEY": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 38.62103322352856,
+  "forecast_10d_cumulative_vol_pct": 7.693493971802575,
+  "daily_vol_path_pct": [
+   2.4902,
+   2.4759,
+   2.4623,
+   2.4492,
+   2.4367,
+   2.4246,
+   2.4131,
+   2.402,
+   2.3914,
+   2.3812
+  ],
+  "params": {
+   "mu": 0.09705872321529693,
+   "omega": 0.2120490451901761,
+   "alpha[1]": 0.06782626271371713,
+   "beta[1]": 0.8865967232155315
+  },
+  "converged": true
+ },
+ "ASIANPAINT": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 21.72282274868011,
+  "forecast_10d_cumulative_vol_pct": 4.327289870787076,
+  "daily_vol_path_pct": [
+   1.2592,
+   1.3231,
+   1.3571,
+   1.3756,
+   1.3858,
+   1.3914,
+   1.3944,
+   1.3961,
+   1.3971,
+   1.3976
+  ],
+  "params": {
+   "mu": 0.017327088270202837,
+   "omega": 0.8723741956937964,
+   "alpha[1]": 0.27842283384677713,
+   "beta[1]": 0.2753747496189051
+  },
+  "converged": true
+ },
+ "AUROPHARMA": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 26.567142703917956,
+  "forecast_10d_cumulative_vol_pct": 5.292301504665373,
+  "daily_vol_path_pct": [
+   1.6621,
+   1.6649,
+   1.6676,
+   1.6702,
+   1.6727,
+   1.6751,
+   1.6775,
+   1.6797,
+   1.6819,
+   1.6839
+  ],
+  "params": {
+   "mu": 0.08402872517487951,
+   "omega": 0.11144820229001522,
+   "alpha[1]": 0.01645004960888658,
+   "beta[1]": 0.9466099799018229
+  },
+  "converged": true
+ },
+ "AXISBANK": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 27.67712734380393,
+  "forecast_10d_cumulative_vol_pct": 5.513415737584283,
+  "daily_vol_path_pct": [
+   2.3986,
+   2.0279,
+   1.8047,
+   1.6765,
+   1.6056,
+   1.5673,
+   1.547,
+   1.5363,
+   1.5307,
+   1.5277
+  ],
+  "params": {
+   "mu": 0.03480208094355535,
+   "omega": 1.112089581758305,
+   "alpha[1]": 0.1637294182191486,
+   "beta[1]": 0.3577828122767528
+  },
+  "converged": true
+ },
+ "BAJAJ-AUTO": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.002434005404545,
+  "forecast_10d_cumulative_vol_pct": 4.980604071042438,
+  "daily_vol_path_pct": [
+   1.5275,
+   1.5415,
+   1.554,
+   1.565,
+   1.5747,
+   1.5834,
+   1.591,
+   1.5978,
+   1.6038,
+   1.6092
+  ],
+  "params": {
+   "mu": 0.12377050747053907,
+   "omega": 0.29643891360784885,
+   "alpha[1]": 0.06990221353383742,
+   "beta[1]": 0.8215508340356519
+  },
+  "converged": true
+ },
+ "BAJAJFINSV": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 24.528767592541598,
+  "forecast_10d_cumulative_vol_pct": 4.88624746305334,
+  "daily_vol_path_pct": [
+   1.5452,
+   1.5452,
+   1.5452,
+   1.5452,
+   1.5452,
+   1.5452,
+   1.5452,
+   1.5452,
+   1.5452,
+   1.5452
+  ],
+  "params": {
+   "mu": 0.026028586612269932,
+   "omega": 0.026840299645648394,
+   "alpha[1]": 9.75490220423057e-08,
+   "beta[1]": 0.9887592106998014
+  },
+  "converged": true
+ },
+ "BAJFINANCE": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 28.459445089807442,
+  "forecast_10d_cumulative_vol_pct": 5.669257162853182,
+  "daily_vol_path_pct": [
+   1.8305,
+   1.8157,
+   1.8043,
+   1.7957,
+   1.7892,
+   1.7842,
+   1.7804,
+   1.7776,
+   1.7754,
+   1.7738
+  ],
+  "params": {
+   "mu": 0.04111270337288516,
+   "omega": 0.7611622462847784,
+   "alpha[1]": 0.047131067616877804,
+   "beta[1]": 0.7095465925275637
+  },
+  "converged": true
+ },
+ "BANDHANBNK": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 38.591463932963066,
+  "forecast_10d_cumulative_vol_pct": 7.687603628128975,
+  "daily_vol_path_pct": [
+   2.3606,
+   2.3845,
+   2.4043,
+   2.4205,
+   2.434,
+   2.4452,
+   2.4544,
+   2.4621,
+   2.4684,
+   2.4737
+  ],
+  "params": {
+   "mu": -0.008885739952854133,
+   "omega": 1.0485145251023216,
+   "alpha[1]": 0.050895947306509495,
+   "beta[1]": 0.7813022609674344
+  },
+  "converged": true
+ },
+ "BATAINDIA": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.432190790790315,
+  "forecast_10d_cumulative_vol_pct": 5.066213671867214,
+  "daily_vol_path_pct": [
+   1.4831,
+   1.5309,
+   1.5664,
+   1.5928,
+   1.6126,
+   1.6275,
+   1.6387,
+   1.6472,
+   1.6536,
+   1.6585
+  ],
+  "params": {
+   "mu": -0.12872971652503412,
+   "omega": 0.6708470412534604,
+   "alpha[1]": 0.14536616770173139,
+   "beta[1]": 0.6152169005433503
+  },
+  "converged": true
+ },
+ "BERGEPAINT": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.559723189925986,
+  "forecast_10d_cumulative_vol_pct": 5.0916187338778816,
+  "daily_vol_path_pct": [
+   1.5115,
+   1.5671,
+   1.5982,
+   1.6157,
+   1.6257,
+   1.6314,
+   1.6346,
+   1.6365,
+   1.6375,
+   1.6382
+  ],
+  "params": {
+   "mu": -0.017982198436506384,
+   "omega": 1.1453624471067614,
+   "alpha[1]": 0.10151895611488893,
+   "beta[1]": 0.47210492312019925
+  },
+  "converged": true
+ },
+ "BHARATFORG": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 33.049512893580555,
+  "forecast_10d_cumulative_vol_pct": 6.5836205558289,
+  "daily_vol_path_pct": [
+   1.9851,
+   2.0663,
+   2.0885,
+   2.0947,
+   2.0965,
+   2.097,
+   2.0971,
+   2.0971,
+   2.0971,
+   2.0971
+  ],
+  "params": {
+   "mu": 0.05112163229263317,
+   "omega": 3.162962022708451,
+   "alpha[1]": 0.28081978809427116,
+   "beta[1]": 0.0
+  },
+  "converged": true
+ },
+ "BHARTIARTL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 21.540071963734405,
+  "forecast_10d_cumulative_vol_pct": 4.290885043029506,
+  "daily_vol_path_pct": [
+   1.3473,
+   1.3503,
+   1.3529,
+   1.3551,
+   1.357,
+   1.3587,
+   1.3602,
+   1.3614,
+   1.3625,
+   1.3635
+  ],
+  "params": {
+   "mu": 0.10357493120385916,
+   "omega": 0.2502632929397458,
+   "alpha[1]": 0.030574138530869106,
+   "beta[1]": 0.8360008440900171
+  },
+  "converged": true
+ },
+ "BIOCON": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 30.69266058208919,
+  "forecast_10d_cumulative_vol_pct": 6.114124337383838,
+  "daily_vol_path_pct": [
+   1.7745,
+   1.8317,
+   1.877,
+   1.9131,
+   1.942,
+   1.9652,
+   1.9839,
+   1.999,
+   2.0112,
+   2.0211
+  ],
+  "params": {
+   "mu": 0.06451463895891701,
+   "omega": 0.7916018709257454,
+   "alpha[1]": 0.19387080465304665,
+   "beta[1]": 0.6202749408199348
+  },
+  "converged": true
+ },
+ "BOSCHLTD": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.545340129361424,
+  "forecast_10d_cumulative_vol_pct": 5.0887535596317885,
+  "daily_vol_path_pct": [
+   1.5514,
+   1.5731,
+   1.5899,
+   1.6031,
+   1.6134,
+   1.6215,
+   1.6278,
+   1.6328,
+   1.6367,
+   1.6398
+  ],
+  "params": {
+   "mu": 0.11358474170263894,
+   "omega": 0.5758213688132526,
+   "alpha[1]": 0.05693660309210168,
+   "beta[1]": 0.7319012093301898
+  },
+  "converged": true
+ },
+ "BPCL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 30.49896694292617,
+  "forecast_10d_cumulative_vol_pct": 6.075539640888215,
+  "daily_vol_path_pct": [
+   1.9007,
+   1.9061,
+   1.9112,
+   1.9159,
+   1.9203,
+   1.9244,
+   1.9283,
+   1.9318,
+   1.9351,
+   1.9382
+  ],
+  "params": {
+   "mu": 0.07015055076811555,
+   "omega": 0.26126652472303435,
+   "alpha[1]": 0.0703966535845416,
+   "beta[1]": 0.863029568335532
+  },
+  "converged": true
+ },
+ "BRITANNIA": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 20.85706186899648,
+  "forecast_10d_cumulative_vol_pct": 4.154826175413679,
+  "daily_vol_path_pct": [
+   1.3596,
+   1.3291,
+   1.3151,
+   1.3087,
+   1.3058,
+   1.3046,
+   1.304,
+   1.3037,
+   1.3036,
+   1.3035
+  ],
+  "params": {
+   "mu": 0.015093502697732073,
+   "omega": 0.9337878473117636,
+   "alpha[1]": 0.08178782823614178,
+   "beta[1]": 0.3686281682479149
+  },
+  "converged": true
+ },
+ "CHOLAFIN": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 32.521798182621744,
+  "forecast_10d_cumulative_vol_pct": 6.4784972691448,
+  "daily_vol_path_pct": [
+   1.9985,
+   2.0185,
+   2.0336,
+   2.0449,
+   2.0534,
+   2.0598,
+   2.0646,
+   2.0682,
+   2.071,
+   2.0731
+  ],
+  "params": {
+   "mu": 0.06033034861122738,
+   "omega": 1.0557959466021318,
+   "alpha[1]": 0.05182401216513235,
+   "beta[1]": 0.7040124572519295
+  },
+  "converged": true
+ },
+ "CIPLA": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 22.66649909594253,
+  "forecast_10d_cumulative_vol_pct": 4.5152746988204475,
+  "daily_vol_path_pct": [
+   1.349,
+   1.4117,
+   1.4316,
+   1.4381,
+   1.4402,
+   1.4408,
+   1.4411,
+   1.4411,
+   1.4412,
+   1.4412
+  ],
+  "params": {
+   "mu": 0.01180111247230255,
+   "omega": 1.3988875044562559,
+   "alpha[1]": 0.23277688302540755,
+   "beta[1]": 0.09370045210079854
+  },
+  "converged": true
+ },
+ "COALINDIA": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 23.702474988768508,
+  "forecast_10d_cumulative_vol_pct": 4.721646036434839,
+  "daily_vol_path_pct": [
+   1.4779,
+   1.4813,
+   1.4848,
+   1.4882,
+   1.4916,
+   1.4949,
+   1.4982,
+   1.5015,
+   1.5047,
+   1.5079
+  ],
+  "params": {
+   "mu": -0.0004819980202390373,
+   "omega": 0.029187603981491457,
+   "alpha[1]": 0.04328987637068516,
+   "beta[1]": 0.9480633864629346
+  },
+  "converged": true
+ },
+ "COFORGE": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 36.96546674005787,
+  "forecast_10d_cumulative_vol_pct": 7.3636972341860245,
+  "daily_vol_path_pct": [
+   2.3023,
+   2.3181,
+   2.3264,
+   2.3308,
+   2.333,
+   2.3342,
+   2.3349,
+   2.3352,
+   2.3354,
+   2.3355
+  ],
+  "params": {
+   "mu": 0.17491517586865282,
+   "omega": 2.5901048513310267,
+   "alpha[1]": 0.15868703209704613,
+   "beta[1]": 0.36648719482810527
+  },
+  "converged": true
+ },
+ "COLPAL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.883447660656806,
+  "forecast_10d_cumulative_vol_pct": 5.156106192037733,
+  "daily_vol_path_pct": [
+   1.6693,
+   1.6492,
+   1.6368,
+   1.6291,
+   1.6244,
+   1.6215,
+   1.6197,
+   1.6186,
+   1.618,
+   1.6176
+  ],
+  "params": {
+   "mu": -0.03361696950766464,
+   "omega": 1.0129992211971253,
+   "alpha[1]": 0.1858396641002049,
+   "beta[1]": 0.4266989125089979
+  },
+  "converged": true
+ },
+ "CONCOR": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 31.245802139556908,
+  "forecast_10d_cumulative_vol_pct": 6.224312773133371,
+  "daily_vol_path_pct": [
+   2.0939,
+   1.9885,
+   1.9588,
+   1.9506,
+   1.9484,
+   1.9478,
+   1.9476,
+   1.9476,
+   1.9475,
+   1.9475
+  ],
+  "params": {
+   "mu": -0.0381893146210201,
+   "omega": 2.7596095399963083,
+   "alpha[1]": 0.2359598234643123,
+   "beta[1]": 0.036465530251710856
+  },
+  "converged": true
+ },
+ "DABUR": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 23.373286661989884,
+  "forecast_10d_cumulative_vol_pct": 4.656070152097383,
+  "daily_vol_path_pct": [
+   1.483,
+   1.4804,
+   1.4778,
+   1.4754,
+   1.4731,
+   1.4709,
+   1.4688,
+   1.4667,
+   1.4648,
+   1.4629
+  ],
+  "params": {
+   "mu": -0.027520451120295955,
+   "omega": 0.08572324685455689,
+   "alpha[1]": 0.01551847853976881,
+   "beta[1]": 0.9419648957705403
+  },
+  "converged": true
+ },
+ "DIVISLAB": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.50119099440233,
+  "forecast_10d_cumulative_vol_pct": 5.079958841435043,
+  "daily_vol_path_pct": [
+   1.6019,
+   1.6035,
+   1.6047,
+   1.6058,
+   1.6066,
+   1.6073,
+   1.6079,
+   1.6084,
+   1.6088,
+   1.6091
+  ],
+  "params": {
+   "mu": 0.1408973503421074,
+   "omega": 0.45683569953324704,
+   "alpha[1]": 0.05168375724560708,
+   "beta[1]": 0.7722159602096813
+  },
+  "converged": true
+ },
+ "DLF": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 31.48495453995984,
+  "forecast_10d_cumulative_vol_pct": 6.271953071625467,
+  "daily_vol_path_pct": [
+   1.8281,
+   1.9595,
+   1.9941,
+   2.0035,
+   2.0061,
+   2.0068,
+   2.007,
+   2.0071,
+   2.0071,
+   2.0071
+  ],
+  "params": {
+   "mu": 0.02703362611166386,
+   "omega": 2.9207291748083546,
+   "alpha[1]": 0.24988345062644893,
+   "beta[1]": 0.025090078076643645
+  },
+  "converged": true
+ },
+ "DRREDDY": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 23.833255283926672,
+  "forecast_10d_cumulative_vol_pct": 4.747698094819877,
+  "daily_vol_path_pct": [
+   1.4999,
+   1.5003,
+   1.5006,
+   1.5009,
+   1.5012,
+   1.5015,
+   1.5018,
+   1.5021,
+   1.5024,
+   1.5028
+  ],
+  "params": {
+   "mu": 0.03624854828580653,
+   "omega": 0.0009396799647689477,
+   "alpha[1]": 6.530853752467947e-08,
+   "beta[1]": 0.9999999586482584
+  },
+  "converged": true
+ },
+ "EICHERMOT": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 26.41062206132653,
+  "forecast_10d_cumulative_vol_pct": 5.261121846335928,
+  "daily_vol_path_pct": [
+   1.6734,
+   1.6711,
+   1.6689,
+   1.6667,
+   1.6645,
+   1.6625,
+   1.6604,
+   1.6584,
+   1.6565,
+   1.6546
+  ],
+  "params": {
+   "mu": 0.13338649700081665,
+   "omega": 0.06571562448438628,
+   "alpha[1]": 0.02770675439736645,
+   "beta[1]": 0.9460773326894059
+  },
+  "converged": true
+ },
+ "ESCORTS": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 28.837425494656447,
+  "forecast_10d_cumulative_vol_pct": 5.744552661793735,
+  "daily_vol_path_pct": [
+   1.8059,
+   1.8086,
+   1.8111,
+   1.8136,
+   1.8159,
+   1.8181,
+   1.8202,
+   1.8222,
+   1.8242,
+   1.826
+  ],
+  "params": {
+   "mu": -0.008045277961550376,
+   "omega": 0.14957754818953875,
+   "alpha[1]": 0.027459766165922463,
+   "beta[1]": 0.9296187732446071
+  },
+  "converged": true
+ },
+ "EXIDEIND": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 36.14452965392066,
+  "forecast_10d_cumulative_vol_pct": 7.200162652216889,
+  "daily_vol_path_pct": [
+   2.3432,
+   2.3251,
+   2.3083,
+   2.2929,
+   2.2787,
+   2.2657,
+   2.2537,
+   2.2426,
+   2.2324,
+   2.2231
+  ],
+  "params": {
+   "mu": -0.043198177422281485,
+   "omega": 0.38143168481093026,
+   "alpha[1]": 0.08215881293028655,
+   "beta[1]": 0.8329526772464942
+  },
+  "converged": true
+ },
+ "GAIL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 32.39168610038227,
+  "forecast_10d_cumulative_vol_pct": 6.4525783219593515,
+  "daily_vol_path_pct": [
+   2.2344,
+   2.1276,
+   2.0646,
+   2.0279,
+   2.0068,
+   1.9947,
+   1.9878,
+   1.9839,
+   1.9816,
+   1.9804
+  ],
+  "params": {
+   "mu": 0.06315126171453869,
+   "omega": 1.6921992363066602,
+   "alpha[1]": 0.24254580870021533,
+   "beta[1]": 0.32524587111950143
+  },
+  "converged": true
+ },
+ "GLENMARK": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 29.550972388502032,
+  "forecast_10d_cumulative_vol_pct": 5.886694605398058,
+  "daily_vol_path_pct": [
+   1.6747,
+   1.7911,
+   1.8482,
+   1.877,
+   1.8916,
+   1.8991,
+   1.9029,
+   1.9049,
+   1.9059,
+   1.9064
+  ],
+  "params": {
+   "mu": 0.1512444724912903,
+   "omega": 1.76399506813297,
+   "alpha[1]": 0.18637265157251331,
+   "beta[1]": 0.3285659243982433
+  },
+  "converged": true
+ },
+ "GODREJCP": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 26.667570897790984,
+  "forecast_10d_cumulative_vol_pct": 5.312307279748844,
+  "daily_vol_path_pct": [
+   1.6799,
+   1.6799,
+   1.6799,
+   1.6799,
+   1.6799,
+   1.6799,
+   1.6799,
+   1.6799,
+   1.6799,
+   1.6799
+  ],
+  "params": {
+   "mu": 0.0035138055260288455,
+   "omega": 0.1294757430037016,
+   "alpha[1]": 0.0,
+   "beta[1]": 0.9541201450752761
+  },
+  "converged": true
+ },
+ "GODREJPROP": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 37.32843338510742,
+  "forecast_10d_cumulative_vol_pct": 7.436001920585581,
+  "daily_vol_path_pct": [
+   2.0822,
+   2.2368,
+   2.3204,
+   2.3668,
+   2.3928,
+   2.4075,
+   2.4158,
+   2.4206,
+   2.4233,
+   2.4248
+  ],
+  "params": {
+   "mu": 0.011665408037112508,
+   "omega": 2.5313622230588733,
+   "alpha[1]": 0.2464785330114733,
+   "beta[1]": 0.3237281045012293
+  },
+  "converged": true
+ },
+ "GRASIM": {
+  "data_start": "2023-11-13",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 22.391017317253016,
+  "forecast_10d_cumulative_vol_pct": 4.460397414947108,
+  "daily_vol_path_pct": [
+   1.3684,
+   1.3837,
+   1.3958,
+   1.4055,
+   1.4132,
+   1.4193,
+   1.4243,
+   1.4282,
+   1.4313,
+   1.4338
+  ],
+  "params": {
+   "mu": 0.0711719117854368,
+   "omega": 0.41295513637878595,
+   "alpha[1]": 0.0750410242374834,
+   "beta[1]": 0.7269049169286246
+  },
+  "converged": true
+ },
+ "HAVELLS": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 29.587840791418074,
+  "forecast_10d_cumulative_vol_pct": 5.894038967055678,
+  "daily_vol_path_pct": [
+   1.8948,
+   1.8874,
+   1.8802,
+   1.8732,
+   1.8664,
+   1.8598,
+   1.8533,
+   1.8469,
+   1.8408,
+   1.8348
+  ],
+  "params": {
+   "mu": -0.0008195661522440751,
+   "omega": 0.07520473154870817,
+   "alpha[1]": 0.020222679572171668,
+   "beta[1]": 0.9510720404167706
+  },
+  "converged": true
+ },
+ "HCLTECH": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 27.426121650144935,
+  "forecast_10d_cumulative_vol_pct": 5.46341420655644,
+  "daily_vol_path_pct": [
+   1.7308,
+   1.73,
+   1.7293,
+   1.7286,
+   1.728,
+   1.7273,
+   1.7266,
+   1.726,
+   1.7254,
+   1.7248
+  ],
+  "params": {
+   "mu": 0.03645636945215187,
+   "omega": 0.057279462227471364,
+   "alpha[1]": 0.012892084633211348,
+   "beta[1]": 0.9671538286198669
+  },
+  "converged": true
+ },
+ "HDFCBANK": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 28.387704196105474,
+  "forecast_10d_cumulative_vol_pct": 5.654966034751213,
+  "daily_vol_path_pct": [
+   2.0323,
+   1.9605,
+   1.8958,
+   1.8376,
+   1.7853,
+   1.7385,
+   1.6966,
+   1.6593,
+   1.6261,
+   1.5966
+  ],
+  "params": {
+   "mu": 0.006804299997318863,
+   "omega": 0.24556602202646885,
+   "alpha[1]": 0.15811901186388116,
+   "beta[1]": 0.7130618650906787
+  },
+  "converged": true
+ },
+ "HDFCLIFE": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.90401640675306,
+  "forecast_10d_cumulative_vol_pct": 5.160203584336463,
+  "daily_vol_path_pct": [
+   1.6738,
+   1.663,
+   1.6528,
+   1.6431,
+   1.634,
+   1.6253,
+   1.6172,
+   1.6094,
+   1.6021,
+   1.5953
+  ],
+  "params": {
+   "mu": -0.005066963524238132,
+   "omega": 0.13104032746793948,
+   "alpha[1]": 0.028341026951079297,
+   "beta[1]": 0.9120238668431354
+  },
+  "converged": true
+ },
+ "HEROMOTOCO": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 27.042561805733094,
+  "forecast_10d_cumulative_vol_pct": 5.38700725665096,
+  "daily_vol_path_pct": [
+   1.7278,
+   1.7211,
+   1.715,
+   1.7093,
+   1.7042,
+   1.6994,
+   1.6951,
+   1.6911,
+   1.6875,
+   1.6842
+  ],
+  "params": {
+   "mu": 0.0833937987170112,
+   "omega": 0.23506394881089862,
+   "alpha[1]": 0.02255600780805175,
+   "beta[1]": 0.8909599601174923
+  },
+  "converged": true
+ },
+ "HINDALCO": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 30.16241229859582,
+  "forecast_10d_cumulative_vol_pct": 6.008496350970216,
+  "daily_vol_path_pct": [
+   2.0645,
+   1.9505,
+   1.9007,
+   1.8795,
+   1.8706,
+   1.8668,
+   1.8652,
+   1.8646,
+   1.8643,
+   1.8642
+  ],
+  "params": {
+   "mu": 0.11101513345903262,
+   "omega": 2.0197226859944237,
+   "alpha[1]": 0.10598928569949786,
+   "beta[1]": 0.31276069758574165
+  },
+  "converged": true
+ },
+ "HINDPETRO": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 33.751964174422646,
+  "forecast_10d_cumulative_vol_pct": 6.723552200416576,
+  "daily_vol_path_pct": [
+   2.1133,
+   2.1163,
+   2.1193,
+   2.1221,
+   2.125,
+   2.1277,
+   2.1305,
+   2.1332,
+   2.1358,
+   2.1384
+  ],
+  "params": {
+   "mu": 0.07914475006946108,
+   "omega": 0.08248939442902302,
+   "alpha[1]": 0.03668859562436705,
+   "beta[1]": 0.947662591935111
+  },
+  "converged": true
+ },
+ "HINDUNILVR": {
+  "data_start": "2023-11-13",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 20.37161775403983,
+  "forecast_10d_cumulative_vol_pct": 4.058123393008811,
+  "daily_vol_path_pct": [
+   1.3305,
+   1.2864,
+   1.2784,
+   1.2769,
+   1.2767,
+   1.2766,
+   1.2766,
+   1.2766,
+   1.2766,
+   1.2766
+  ],
+  "params": {
+   "mu": -0.03686680513278197,
+   "omega": 1.3383271185019796,
+   "alpha[1]": 0.1498121223305919,
+   "beta[1]": 0.028995738923377628
+  },
+  "converged": true
+ },
+ "ICICIBANK": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 21.85694436447338,
+  "forecast_10d_cumulative_vol_pct": 4.354007536174789,
+  "daily_vol_path_pct": [
+   1.8716,
+   1.5529,
+   1.3886,
+   1.3093,
+   1.2726,
+   1.2561,
+   1.2487,
+   1.2454,
+   1.2439,
+   1.2433
+  ],
+  "params": {
+   "mu": 0.03622336657629318,
+   "omega": 0.8607682454762455,
+   "alpha[1]": 0.18633114254326777,
+   "beta[1]": 0.2563251826923435
+  },
+  "converged": true
+ },
+ "ICICIPRULI": {
+  "data_start": "2023-10-13",
+  "data_cutoff": "2026-10-22",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 26.751780109592623,
+  "forecast_10d_cumulative_vol_pct": 5.329082156267981,
+  "daily_vol_path_pct": [
+   1.6898,
+   1.6887,
+   1.6877,
+   1.6866,
+   1.6856,
+   1.6846,
+   1.6837,
+   1.6827,
+   1.6818,
+   1.6808
+  ],
+  "params": {
+   "mu": -0.02982144233237168,
+   "omega": 0.04356894326573493,
+   "alpha[1]": 0.02240470007584802,
+   "beta[1]": 0.9610869246959831
+  },
+  "converged": true
+ },
+ "IGL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 30.494770579022017,
+  "forecast_10d_cumulative_vol_pct": 6.074703705189312,
+  "daily_vol_path_pct": [
+   1.8902,
+   1.8974,
+   1.9045,
+   1.9114,
+   1.9181,
+   1.9248,
+   1.9312,
+   1.9376,
+   1.9438,
+   1.9499
+  ],
+  "params": {
+   "mu": 0.005669771272305584,
+   "omega": 0.0896263784647261,
+   "alpha[1]": 0.037774347511661484,
+   "beta[1]": 0.9447754695691124
+  },
+  "converged": true
+ },
+ "INDUSINDBK": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 86.29295051265797,
+  "forecast_10d_cumulative_vol_pct": 17.189967206100974,
+  "daily_vol_path_pct": [
+   5.129,
+   5.1988,
+   5.2676,
+   5.3356,
+   5.4027,
+   5.469,
+   5.5345,
+   5.5992,
+   5.6632,
+   5.7265
+  ],
+  "params": {
+   "mu": 0.06953995075628729,
+   "omega": 0.7206658982510497,
+   "alpha[1]": 0.4309768581838483,
+   "beta[1]": 0.5690231418162022
+  },
+  "converged": true
+ },
+ "INDUSTOWER": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.74477943609713,
+  "forecast_10d_cumulative_vol_pct": 5.1284828205045105,
+  "daily_vol_path_pct": [
+   1.6226,
+   1.6224,
+   1.6222,
+   1.6221,
+   1.6219,
+   1.6217,
+   1.6215,
+   1.6213,
+   1.6211,
+   1.6209
+  ],
+  "params": {
+   "mu": 0.04719647682898832,
+   "omega": 0.0051428745485977,
+   "alpha[1]": 0.00980278296224234,
+   "beta[1]": 0.9880047272757201
+  },
+  "converged": true
+ },
+ "INFY": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 29.639959159394664,
+  "forecast_10d_cumulative_vol_pct": 5.9044211944685845,
+  "daily_vol_path_pct": [
+   1.8723,
+   1.8711,
+   1.87,
+   1.8688,
+   1.8677,
+   1.8665,
+   1.8654,
+   1.8643,
+   1.8632,
+   1.8621
+  ],
+  "params": {
+   "mu": 0.007748525018075447,
+   "omega": 0.026891215313933344,
+   "alpha[1]": 0.011405789336232347,
+   "beta[1]": 0.9796747113575778
+  },
+  "converged": true
+ },
+ "IOC": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 33.04263521695569,
+  "forecast_10d_cumulative_vol_pct": 6.582250489850935,
+  "daily_vol_path_pct": [
+   2.2421,
+   2.1905,
+   2.1461,
+   2.108,
+   2.0755,
+   2.0477,
+   2.024,
+   2.0039,
+   1.9869,
+   1.9724
+  ],
+  "params": {
+   "mu": 0.07299987819020294,
+   "omega": 0.5703733731058862,
+   "alpha[1]": 0.14783811995592316,
+   "beta[1]": 0.693165564827821
+  },
+  "converged": true
+ },
+ "IPCALAB": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 30.540747199552012,
+  "forecast_10d_cumulative_vol_pct": 6.083862467225638,
+  "daily_vol_path_pct": [
+   1.8064,
+   1.8848,
+   1.92,
+   1.936,
+   1.9434,
+   1.9468,
+   1.9484,
+   1.9491,
+   1.9494,
+   1.9496
+  ],
+  "params": {
+   "mu": 0.09338055491013773,
+   "omega": 2.0429945577608,
+   "alpha[1]": 0.32517548262497425,
+   "beta[1]": 0.13739873297604077
+  },
+  "converged": true
+ },
+ "ITC": {
+  "data_start": "2023-11-13",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 19.43605828090174,
+  "forecast_10d_cumulative_vol_pct": 3.8717554850040687,
+  "daily_vol_path_pct": [
+   1.1583,
+   1.2211,
+   1.2311,
+   1.2327,
+   1.233,
+   1.2331,
+   1.2331,
+   1.2331,
+   1.2331,
+   1.2331
+  ],
+  "params": {
+   "mu": -0.026549724525034273,
+   "omega": 1.2698588476986006,
+   "alpha[1]": 0.16482177697594694,
+   "beta[1]": 0.0
+  },
+  "converged": true
+ },
+ "JINDALSTEL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 29.462789043252453,
+  "forecast_10d_cumulative_vol_pct": 5.869128062546539,
+  "daily_vol_path_pct": [
+   1.7108,
+   1.841,
+   1.8686,
+   1.8747,
+   1.8761,
+   1.8763,
+   1.8764,
+   1.8764,
+   1.8764,
+   1.8764
+  ],
+  "params": {
+   "mu": 0.07113329010907955,
+   "omega": 2.741138208832935,
+   "alpha[1]": 0.1656708827370033,
+   "beta[1]": 0.05581851567875319
+  },
+  "converged": true
+ },
+ "JSWSTEEL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.373766791379666,
+  "forecast_10d_cumulative_vol_pct": 5.05457533260599,
+  "daily_vol_path_pct": [
+   1.5906,
+   1.5944,
+   1.5968,
+   1.5985,
+   1.5995,
+   1.6002,
+   1.6006,
+   1.6009,
+   1.6011,
+   1.6013
+  ],
+  "params": {
+   "mu": 0.11203012192317734,
+   "omega": 0.8921521822681244,
+   "alpha[1]": 0.16503040410128464,
+   "beta[1]": 0.4871198327061466
+  },
+  "converged": true
+ },
+ "KOTAKBANK": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 23.190835541693744,
+  "forecast_10d_cumulative_vol_pct": 4.619725018966874,
+  "daily_vol_path_pct": [
+   1.4609,
+   1.4609,
+   1.4609,
+   1.4609,
+   1.4609,
+   1.4609,
+   1.4609,
+   1.4609,
+   1.4609,
+   1.4609
+  ],
+  "params": {
+   "mu": 0.05076539036889059,
+   "omega": 0.06823763187336881,
+   "alpha[1]": 0.0,
+   "beta[1]": 0.9680263883898441
+  },
+  "converged": true
+ },
+ "LICHSGFIN": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 29.431609447712166,
+  "forecast_10d_cumulative_vol_pct": 5.862916938443669,
+  "daily_vol_path_pct": [
+   1.7654,
+   1.8324,
+   1.8564,
+   1.8651,
+   1.8683,
+   1.8695,
+   1.8699,
+   1.8701,
+   1.8701,
+   1.8702
+  ],
+  "params": {
+   "mu": 0.04492101937197535,
+   "omega": 2.212677194912357,
+   "alpha[1]": 0.2174487176265205,
+   "beta[1]": 0.14991747123448276
+  },
+  "converged": true
+ },
+ "LT": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 26.38843538592892,
+  "forecast_10d_cumulative_vol_pct": 5.25670215480572,
+  "daily_vol_path_pct": [
+   1.7122,
+   1.6942,
+   1.6797,
+   1.6681,
+   1.6588,
+   1.6514,
+   1.6454,
+   1.6407,
+   1.6369,
+   1.6339
+  ],
+  "params": {
+   "mu": 0.06272136966227392,
+   "omega": 0.5367273359373699,
+   "alpha[1]": 0.20722627093321644,
+   "beta[1]": 0.5887628365415003
+  },
+  "converged": true
+ },
+ "LUPIN": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 24.29818970522936,
+  "forecast_10d_cumulative_vol_pct": 4.840315248454094,
+  "daily_vol_path_pct": [
+   1.4977,
+   1.5092,
+   1.5185,
+   1.5262,
+   1.5324,
+   1.5374,
+   1.5416,
+   1.5449,
+   1.5477,
+   1.5499
+  ],
+  "params": {
+   "mu": 0.06102243106940571,
+   "omega": 0.4419160242884893,
+   "alpha[1]": 0.10245557687126956,
+   "beta[1]": 0.7159663334919102
+  },
+  "converged": true
+ },
+ "M&M": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 34.41718898104134,
+  "forecast_10d_cumulative_vol_pct": 6.856068153834843,
+  "daily_vol_path_pct": [
+   2.2249,
+   2.2108,
+   2.1973,
+   2.1844,
+   2.1719,
+   2.1599,
+   2.1484,
+   2.1373,
+   2.1267,
+   2.1164
+  ],
+  "params": {
+   "mu": 0.08504924114856216,
+   "omega": 0.1559835120400634,
+   "alpha[1]": 0.07196817844846425,
+   "beta[1]": 0.8839532553098163
+  },
+  "converged": true
+ },
+ "MANAPPURAM": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 38.24261330010831,
+  "forecast_10d_cumulative_vol_pct": 7.618110918666908,
+  "daily_vol_path_pct": [
+   2.5538,
+   2.4529,
+   2.4095,
+   2.3912,
+   2.3835,
+   2.3803,
+   2.3789,
+   2.3784,
+   2.3781,
+   2.378
+  ],
+  "params": {
+   "mu": 0.08430769841703524,
+   "omega": 3.2955307697566565,
+   "alpha[1]": 0.15964633231877512,
+   "beta[1]": 0.2575660699054447
+  },
+  "converged": true
+ },
+ "MARICO": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.911776131377255,
+  "forecast_10d_cumulative_vol_pct": 5.1617493584816945,
+  "daily_vol_path_pct": [
+   1.6448,
+   1.6419,
+   1.639,
+   1.6362,
+   1.6335,
+   1.6307,
+   1.6281,
+   1.6254,
+   1.6228,
+   1.6202
+  ],
+  "params": {
+   "mu": 0.07773649463756781,
+   "omega": 0.03409961365190072,
+   "alpha[1]": 0.013344559292980257,
+   "beta[1]": 0.9705450937481241
+  },
+  "converged": true
+ },
+ "MARUTI": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.935143052342013,
+  "forecast_10d_cumulative_vol_pct": 5.166404160556551,
+  "daily_vol_path_pct": [
+   1.6466,
+   1.6436,
+   1.6406,
+   1.6377,
+   1.6349,
+   1.6321,
+   1.6294,
+   1.6268,
+   1.6241,
+   1.6216
+  ],
+  "params": {
+   "mu": 0.05066636847325112,
+   "omega": 0.04855979969717478,
+   "alpha[1]": 0.007318476927489702,
+   "beta[1]": 0.9711265608417871
+  },
+  "converged": true
+ },
+ "MOTHERSON": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 38.20456346093366,
+  "forecast_10d_cumulative_vol_pct": 7.610531209273222,
+  "daily_vol_path_pct": [
+   2.453,
+   2.4414,
+   2.4303,
+   2.4197,
+   2.4095,
+   2.3999,
+   2.3906,
+   2.3818,
+   2.3734,
+   2.3654
+  ],
+  "params": {
+   "mu": 0.13777306509667162,
+   "omega": 0.23872239721093505,
+   "alpha[1]": 0.042878710259799294,
+   "beta[1]": 0.9079957382470909
+  },
+  "converged": true
+ },
+ "MRF": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 22.57410350313974,
+  "forecast_10d_cumulative_vol_pct": 4.496869056171396,
+  "daily_vol_path_pct": [
+   1.3257,
+   1.404,
+   1.4274,
+   1.4345,
+   1.4367,
+   1.4374,
+   1.4376,
+   1.4377,
+   1.4377,
+   1.4377
+  ],
+  "params": {
+   "mu": 0.01851019051983723,
+   "omega": 1.4283525213188373,
+   "alpha[1]": 0.2882140176358363,
+   "beta[1]": 0.020750193957513048
+  },
+  "converged": true
+ },
+ "NESTLEIND": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 21.255731666163715,
+  "forecast_10d_cumulative_vol_pct": 4.234243099955648,
+  "daily_vol_path_pct": [
+   1.3718,
+   1.3502,
+   1.3401,
+   1.3354,
+   1.3333,
+   1.3323,
+   1.3318,
+   1.3316,
+   1.3315,
+   1.3314
+  ],
+  "params": {
+   "mu": 0.0002402249102711776,
+   "omega": 0.9543143535646227,
+   "alpha[1]": 0.15745874278665414,
+   "beta[1]": 0.30417549691542695
+  },
+  "converged": true
+ },
+ "NTPC": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 24.752979161205904,
+  "forecast_10d_cumulative_vol_pct": 4.930911476621892,
+  "daily_vol_path_pct": [
+   1.6065,
+   1.5795,
+   1.5643,
+   1.5559,
+   1.5513,
+   1.5487,
+   1.5473,
+   1.5465,
+   1.546,
+   1.5458
+  ],
+  "params": {
+   "mu": 0.05339250355019026,
+   "omega": 1.0711434088841878,
+   "alpha[1]": 0.21766771258636605,
+   "beta[1]": 0.33389442377972794
+  },
+  "converged": true
+ },
+ "OFSS": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 34.715968783510164,
+  "forecast_10d_cumulative_vol_pct": 6.915586515135178,
+  "daily_vol_path_pct": [
+   1.8763,
+   1.9866,
+   2.0738,
+   2.1434,
+   2.1996,
+   2.2452,
+   2.2824,
+   2.3128,
+   2.3377,
+   2.3582
+  ],
+  "params": {
+   "mu": 0.016466065280703913,
+   "omega": 1.0234355901633607,
+   "alpha[1]": 0.181507195093469,
+   "beta[1]": 0.6488384220787566
+  },
+  "converged": true
+ },
+ "ONGC": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.748673485233564,
+  "forecast_10d_cumulative_vol_pct": 5.129258533660181,
+  "daily_vol_path_pct": [
+   1.2583,
+   1.3911,
+   1.4927,
+   1.5723,
+   1.6356,
+   1.6866,
+   1.7278,
+   1.7615,
+   1.789,
+   1.8117
+  ],
+  "params": {
+   "mu": 0.012686421654384668,
+   "omega": 0.6163046181238607,
+   "alpha[1]": 0.26915951374380553,
+   "beta[1]": 0.5637345916261122
+  },
+  "converged": true
+ },
+ "PETRONET": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 27.86698084521075,
+  "forecast_10d_cumulative_vol_pct": 5.551235460328239,
+  "daily_vol_path_pct": [
+   1.5639,
+   1.6424,
+   1.6995,
+   1.7414,
+   1.7724,
+   1.7956,
+   1.8129,
+   1.8259,
+   1.8356,
+   1.843
+  ],
+  "params": {
+   "mu": 0.06325450322350577,
+   "omega": 0.8473649991438905,
+   "alpha[1]": 0.19617147464595708,
+   "beta[1]": 0.5603781822549116
+  },
+  "converged": true
+ },
+ "PFC": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 37.795309025824686,
+  "forecast_10d_cumulative_vol_pct": 7.52900577438335,
+  "daily_vol_path_pct": [
+   2.3745,
+   2.3783,
+   2.3803,
+   2.3814,
+   2.382,
+   2.3823,
+   2.3824,
+   2.3825,
+   2.3826,
+   2.3826
+  ],
+  "params": {
+   "mu": 0.040071814239309576,
+   "omega": 2.6317526187356437,
+   "alpha[1]": 0.2644950630361449,
+   "beta[1]": 0.271914613979317
+  },
+  "converged": true
+ },
+ "PIDILITIND": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.82833163225679,
+  "forecast_10d_cumulative_vol_pct": 5.145126816374969,
+  "daily_vol_path_pct": [
+   1.6538,
+   1.6475,
+   1.6413,
+   1.6353,
+   1.6294,
+   1.6236,
+   1.6179,
+   1.6123,
+   1.6069,
+   1.6015
+  ],
+  "params": {
+   "mu": 0.0419516246303425,
+   "omega": 0.045476368262414656,
+   "alpha[1]": 0.03499696713141783,
+   "beta[1]": 0.9407591323450545
+  },
+  "converged": true
+ },
+ "PIIND": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 50.63015099420074,
+  "forecast_10d_cumulative_vol_pct": 10.08576749386482,
+  "daily_vol_path_pct": [
+   3.1836,
+   3.1849,
+   3.1862,
+   3.1875,
+   3.1888,
+   3.19,
+   3.1913,
+   3.1926,
+   3.1939,
+   3.1951
+  ],
+  "params": {
+   "mu": -0.07603829835745592,
+   "omega": 0.008143264791456734,
+   "alpha[1]": 0.015604496678031356,
+   "beta[1]": 0.9843955033146583
+  },
+  "converged": true
+ },
+ "POWERGRID": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 26.404919260626183,
+  "forecast_10d_cumulative_vol_pct": 5.259985821244197,
+  "daily_vol_path_pct": [
+   1.639,
+   1.6464,
+   1.6529,
+   1.6585,
+   1.6635,
+   1.6678,
+   1.6716,
+   1.6749,
+   1.6779,
+   1.6804
+  ],
+  "params": {
+   "mu": 0.022913942609896987,
+   "omega": 0.3507163933415877,
+   "alpha[1]": 0.19755114661783024,
+   "beta[1]": 0.6809272434980479
+  },
+  "converged": true
+ },
+ "RELIANCE": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 22.338570838095876,
+  "forecast_10d_cumulative_vol_pct": 4.44994982622253,
+  "daily_vol_path_pct": [
+   1.4021,
+   1.4045,
+   1.4061,
+   1.4072,
+   1.4079,
+   1.4084,
+   1.4087,
+   1.4089,
+   1.409,
+   1.4091
+  ],
+  "params": {
+   "mu": 0.026801029475170112,
+   "omega": 0.6630956789369279,
+   "alpha[1]": 0.07939074204390446,
+   "beta[1]": 0.5867545394757255
+  },
+  "converged": true
+ },
+ "SAIL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 42.06251091260637,
+  "forecast_10d_cumulative_vol_pct": 8.379052737197878,
+  "daily_vol_path_pct": [
+   2.1952,
+   2.4736,
+   2.6108,
+   2.6817,
+   2.7189,
+   2.7387,
+   2.7493,
+   2.755,
+   2.758,
+   2.7596
+  ],
+  "params": {
+   "mu": 0.0871287345611389,
+   "omega": 3.530885969772229,
+   "alpha[1]": 0.4195810696286119,
+   "beta[1]": 0.11740625173377946
+  },
+  "converged": true
+ },
+ "SBIN": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 24.880273040161992,
+  "forecast_10d_cumulative_vol_pct": 4.95626902427547,
+  "daily_vol_path_pct": [
+   1.832,
+   1.6575,
+   1.5736,
+   1.5348,
+   1.5172,
+   1.5093,
+   1.5057,
+   1.5042,
+   1.5034,
+   1.5031
+  ],
+  "params": {
+   "mu": 0.09399583330385847,
+   "omega": 1.2529923594722832,
+   "alpha[1]": 0.18610715475211928,
+   "beta[1]": 0.25914269364566045
+  },
+  "converged": true
+ },
+ "SHREECEM": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 22.220560312277147,
+  "forecast_10d_cumulative_vol_pct": 4.426441566779006,
+  "daily_vol_path_pct": [
+   1.3703,
+   1.3847,
+   1.394,
+   1.4,
+   1.4039,
+   1.4065,
+   1.4081,
+   1.4092,
+   1.4099,
+   1.4104
+  ],
+  "params": {
+   "mu": -0.006294680671017097,
+   "omega": 0.6943030396850921,
+   "alpha[1]": 0.10938923890123269,
+   "beta[1]": 0.5419838034023431
+  },
+  "converged": true
+ },
+ "SIEMENS": {
+  "data_start": "2023-11-13",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 32.272339308493265,
+  "forecast_10d_cumulative_vol_pct": 6.428803871943015,
+  "daily_vol_path_pct": [
+   1.7954,
+   1.917,
+   1.9909,
+   2.0368,
+   2.0656,
+   2.0839,
+   2.0955,
+   2.1029,
+   2.1076,
+   2.1106
+  ],
+  "params": {
+   "mu": 0.09859803354879619,
+   "omega": 1.61134725473136,
+   "alpha[1]": 0.20148223928616021,
+   "beta[1]": 0.4386230845816381
+  },
+  "converged": true
+ },
+ "SRF": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 28.80423558736542,
+  "forecast_10d_cumulative_vol_pct": 5.737941074004504,
+  "daily_vol_path_pct": [
+   1.4352,
+   1.5848,
+   1.694,
+   1.776,
+   1.8384,
+   1.8864,
+   1.9237,
+   1.9528,
+   1.9755,
+   1.9934
+  ],
+  "params": {
+   "mu": 0.02134593706637363,
+   "omega": 0.8769661467202955,
+   "alpha[1]": 0.3765841305866206,
+   "beta[1]": 0.4168918358918515
+  },
+  "converged": true
+ },
+ "SUNPHARMA": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 19.264828846867086,
+  "forecast_10d_cumulative_vol_pct": 3.8376457652843428,
+  "daily_vol_path_pct": [
+   1.2005,
+   1.204,
+   1.2073,
+   1.2103,
+   1.2131,
+   1.2156,
+   1.218,
+   1.2202,
+   1.2223,
+   1.2241
+  ],
+  "params": {
+   "mu": 0.0805630379228153,
+   "omega": 0.11257600874955184,
+   "alpha[1]": 0.051269859999611145,
+   "beta[1]": 0.8764690555663847
+  },
+  "converged": true
+ },
+ "TATAMOTORS": {
+  "data_start": "2023-01-03",
+  "data_cutoff": "2025-10-23",
+  "observations": 695,
+  "forecast_annualised_vol_pct": 26.959845672742308,
+  "forecast_10d_cumulative_vol_pct": 5.370529808550276,
+  "daily_vol_path_pct": [
+   1.618,
+   1.6459,
+   1.6686,
+   1.687,
+   1.7021,
+   1.7144,
+   1.7245,
+   1.7328,
+   1.7397,
+   1.7453
+  ],
+  "params": {
+   "mu": 0.08729223278828842,
+   "omega": 0.5489890445679272,
+   "alpha[1]": 0.07115254888636824,
+   "beta[1]": 0.7539001670314466
+  },
+  "converged": true
+ },
+ "TATASTEEL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 38.45631183221464,
+  "forecast_10d_cumulative_vol_pct": 7.660680685224614,
+  "daily_vol_path_pct": [
+   3.3898,
+   2.9944,
+   2.686,
+   2.4493,
+   2.2707,
+   2.138,
+   2.0408,
+   1.9706,
+   1.9204,
+   1.8848
+  ],
+  "params": {
+   "mu": 0.061122547618658866,
+   "omega": 0.9936435770405835,
+   "alpha[1]": 0.11168276392385582,
+   "beta[1]": 0.5821280298486206
+  },
+  "converged": true
+ },
+ "TCS": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 26.08084868019352,
+  "forecast_10d_cumulative_vol_pct": 5.19542941638141,
+  "daily_vol_path_pct": [
+   1.96,
+   1.7764,
+   1.6717,
+   1.614,
+   1.5828,
+   1.5661,
+   1.5573,
+   1.5526,
+   1.5502,
+   1.5489
+  ],
+  "params": {
+   "mu": -0.03821139395973197,
+   "omega": 1.1354257038705877,
+   "alpha[1]": 0.15014498080786923,
+   "beta[1]": 0.3756796205984346
+  },
+  "converged": true
+ },
+ "TECHM": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 26.766397661265525,
+  "forecast_10d_cumulative_vol_pct": 5.33199404226096,
+  "daily_vol_path_pct": [
+   1.6697,
+   1.68,
+   1.6851,
+   1.6877,
+   1.6889,
+   1.6896,
+   1.6899,
+   1.69,
+   1.6901,
+   1.6902
+  ],
+  "params": {
+   "mu": 0.05833124317021152,
+   "omega": 1.4285444221223806,
+   "alpha[1]": 0.10506092640489031,
+   "beta[1]": 0.3948883882928537
+  },
+  "converged": true
+ },
+ "TITAN": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.11049103140319,
+  "forecast_10d_cumulative_vol_pct": 5.0021295458613,
+  "daily_vol_path_pct": [
+   1.5938,
+   1.591,
+   1.5882,
+   1.5855,
+   1.5828,
+   1.5803,
+   1.5777,
+   1.5753,
+   1.5729,
+   1.5705
+  ],
+  "params": {
+   "mu": 0.06551287415992582,
+   "omega": 0.05543440395319236,
+   "alpha[1]": 0.014096690747791752,
+   "beta[1]": 0.9605163674283148
+  },
+  "converged": true
+ },
+ "TORNTPHARM": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 22.022840531084544,
+  "forecast_10d_cumulative_vol_pct": 4.38705484359355,
+  "daily_vol_path_pct": [
+   1.3665,
+   1.3749,
+   1.3811,
+   1.3858,
+   1.3893,
+   1.3919,
+   1.3939,
+   1.3954,
+   1.3965,
+   1.3974
+  ],
+  "params": {
+   "mu": 0.12250005568012853,
+   "omega": 0.4837892220656458,
+   "alpha[1]": 0.061166907938263466,
+   "beta[1]": 0.6919908690160844
+  },
+  "converged": true
+ },
+ "TORNTPOWER": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 27.994373077760695,
+  "forecast_10d_cumulative_vol_pct": 5.576612600486684,
+  "daily_vol_path_pct": [
+   1.7554,
+   1.7572,
+   1.759,
+   1.7608,
+   1.7626,
+   1.7644,
+   1.7662,
+   1.7679,
+   1.7697,
+   1.7714
+  ],
+  "params": {
+   "mu": 0.0005870133383279286,
+   "omega": 0.023681013789380836,
+   "alpha[1]": 0.020244547008875003,
+   "beta[1]": 0.9741502366542808
+  },
+  "converged": true
+ },
+ "TVSMOTOR": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 28.437802722923358,
+  "forecast_10d_cumulative_vol_pct": 5.664945900174253,
+  "daily_vol_path_pct": [
+   1.8085,
+   1.8042,
+   1.8002,
+   1.7963,
+   1.7925,
+   1.789,
+   1.7856,
+   1.7823,
+   1.7792,
+   1.7762
+  ],
+  "params": {
+   "mu": 0.15454706601632873,
+   "omega": 0.1321027207577064,
+   "alpha[1]": 0.04361711729926812,
+   "beta[1]": 0.9112960133385158
+  },
+  "converged": true
+ },
+ "UBL": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.535004565881245,
+  "forecast_10d_cumulative_vol_pct": 5.086694666104272,
+  "daily_vol_path_pct": [
+   1.6172,
+   1.6151,
+   1.6131,
+   1.6112,
+   1.6093,
+   1.6074,
+   1.6056,
+   1.6039,
+   1.6021,
+   1.6004
+  ],
+  "params": {
+   "mu": -0.03913227711229414,
+   "omega": 0.05562819561279804,
+   "alpha[1]": 0.027753552522529173,
+   "beta[1]": 0.9484607793530027
+  },
+  "converged": true
+ },
+ "ULTRACEMCO": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 25.983074900451502,
+  "forecast_10d_cumulative_vol_pct": 5.175952413249673,
+  "daily_vol_path_pct": [
+   1.6626,
+   1.6563,
+   1.6503,
+   1.6444,
+   1.6387,
+   1.6332,
+   1.6279,
+   1.6228,
+   1.6178,
+   1.613
+  ],
+  "params": {
+   "mu": 0.055116483886032346,
+   "omega": 0.07669666348537747,
+   "alpha[1]": 0.0704807719829394,
+   "beta[1]": 0.8942649627338977
+  },
+  "converged": true
+ },
+ "UNITDSPR": {
+  "data_start": "2024-06-10",
+  "data_cutoff": "2026-11-23",
+  "observations": 610,
+  "forecast_annualised_vol_pct": 23.761809824277346,
+  "forecast_10d_cumulative_vol_pct": 4.733465818589891,
+  "daily_vol_path_pct": [
+   1.4792,
+   1.4839,
+   1.4883,
+   1.4924,
+   1.4961,
+   1.4996,
+   1.5029,
+   1.5059,
+   1.5087,
+   1.5113
+  ],
+  "params": {
+   "mu": 0.0336793284222645,
+   "omega": 0.1667066456973623,
+   "alpha[1]": 0.07024197868890135,
+   "beta[1]": 0.859956794526807
+  },
+  "converged": true
+ },
+ "UPL": {
+  "data_start": "2023-11-13",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 32.303809742273266,
+  "forecast_10d_cumulative_vol_pct": 6.435072932410018,
+  "daily_vol_path_pct": [
+   2.1074,
+   2.0594,
+   2.0371,
+   2.0269,
+   2.0222,
+   2.0201,
+   2.0191,
+   2.0187,
+   2.0185,
+   2.0184
+  ],
+  "params": {
+   "mu": 0.007829278411376513,
+   "omega": 2.2163675299975663,
+   "alpha[1]": 0.2192260308568956,
+   "beta[1]": 0.23667622837068722
+  },
+  "converged": true
+ },
+ "VEDL": {
+  "data_start": "2023-11-13",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 34.10786885374622,
+  "forecast_10d_cumulative_vol_pct": 6.794450109570495,
+  "daily_vol_path_pct": [
+   2.0738,
+   2.1125,
+   2.1362,
+   2.1508,
+   2.1598,
+   2.1654,
+   2.1689,
+   2.171,
+   2.1723,
+   2.1732
+  ],
+  "params": {
+   "mu": 0.1061045472331194,
+   "omega": 1.7887913593183107,
+   "alpha[1]": 0.15499233874634893,
+   "beta[1]": 0.466718321736325
+  },
+  "converged": true
+ },
+ "WIPRO": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 27.537923561356145,
+  "forecast_10d_cumulative_vol_pct": 5.48568568036609,
+  "daily_vol_path_pct": [
+   1.5853,
+   1.7171,
+   1.747,
+   1.754,
+   1.7557,
+   1.7561,
+   1.7562,
+   1.7562,
+   1.7562,
+   1.7562
+  ],
+  "params": {
+   "mu": 0.025352987268943042,
+   "omega": 2.350145411716807,
+   "alpha[1]": 0.23801464634979738,
+   "beta[1]": 0.0
+  },
+  "converged": true
+ },
+ "ZYDUSLIFE": {
+  "data_start": "2023-11-15",
+  "data_cutoff": "2026-11-23",
+  "observations": 750,
+  "forecast_annualised_vol_pct": 22.826365102757283,
+  "forecast_10d_cumulative_vol_pct": 4.5471207696546205,
+  "daily_vol_path_pct": [
+   1.3031,
+   1.3448,
+   1.3806,
+   1.4114,
+   1.4381,
+   1.4612,
+   1.4814,
+   1.4989,
+   1.5143,
+   1.5277
+  ],
+  "params": {
+   "mu": 0.07135004479626021,
+   "omega": 0.30906981445140075,
+   "alpha[1]": 0.1015644381258234,
+   "beta[1]": 0.7814423457939076
+  },
+  "converged": true
+ }
+}
