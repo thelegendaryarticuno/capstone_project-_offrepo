@@ -1,0 +1,27 @@
+# Express backend. Build context: repo root.
+# Secrets are NOT baked in: Jenkins copies the Firebase service account into the container at deploy time.
+FROM node:24-alpine AS deps
+WORKDIR /app
+COPY application/backend/package*.json ./
+RUN npm ci --omit=dev
+
+# `docker build --target test` runs unit + API tests; the service account is a BuildKit secret, never a layer
+FROM node:24-alpine AS test
+WORKDIR /app
+COPY application/backend/package*.json ./
+RUN npm ci
+COPY application/backend/src ./src
+RUN --mount=type=secret,id=firebase_sa,target=/run/secrets/firebase.json FIREBASE_SA_FILE=/run/secrets/firebase.json npm test
+
+FROM node:24-alpine AS runtime
+ENV NODE_ENV=production PORT=4000 DB_FILE=/data/sprpa.db FIREBASE_SA_FILE=/run/secrets/firebase.json
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY application/backend/package.json ./
+COPY application/backend/src ./src
+RUN mkdir -p /data /run/secrets && chown -R node:node /data /run/secrets
+USER node
+VOLUME /data
+EXPOSE 4000
+HEALTHCHECK --interval=15s --timeout=3s --retries=3 CMD wget -qO- http://localhost:4000/api/v1/health || exit 1
+CMD ["node", "src/index.js"]
