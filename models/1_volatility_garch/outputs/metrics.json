@@ -1,0 +1,72 @@
+{
+  "provenance": {
+    "run_time": "2026-11-26T01:58:03",
+    "preprocessing_version": "v1",
+    "device": "CPU",
+    "source": "huggingface.co/datasets/tejhq/indian-markets (prices_adjusted, actions; NSE EQ)",
+    "arch": "9.0.0"
+  },
+  "units": "annualised volatility, percentage points",
+  "selected_distribution": "normal",
+  "validation_by_distribution": {
+    "normal": {
+      "n": 2480,
+      "rmse_vol_points": 13.009,
+      "mae_vol_points": 8.74,
+      "median_abs_pct_error": 30.03
+    },
+    "t": {
+      "n": 2480,
+      "rmse_vol_points": 13.1,
+      "mae_vol_points": 9.103,
+      "median_abs_pct_error": 30.45
+    }
+  },
+  "test_garch_vs_next_10d": {
+    "n": 2500,
+    "rmse_vol_points": 10.907,
+    "mae_vol_points": 8.433,
+    "median_abs_pct_error": 28.2
+  },
+  "test_baseline_trailing30d_vs_next_10d": {
+    "n": 2500,
+    "rmse_vol_points": 11.295,
+    "mae_vol_points": 8.464,
+    "median_abs_pct_error": 27.31
+  },
+  "test_garch_vs_next_30d": {
+    "n": 2300,
+    "rmse_vol_points": 8.316,
+    "mae_vol_points": 6.409,
+    "median_abs_pct_error": 19.86
+  },
+  "test_baseline_trailing30d_vs_next_30d": {
+    "n": 2300,
+    "rmse_vol_points": 9.534,
+    "mae_vol_points": 7.355,
+    "median_abs_pct_error": 23.24
+  },
+  "test_fit_convergence_rate": 1.0,
+  "symbols_skipped": {},
+  "regime_matrix": {
+    "cut_points_annualised_vol_pct": [
+      18.36,
+      26.65
+    ],
+    "garch": {
+      "accuracy": 0.44,
+      "macro_f1": 0.361
+    },
+    "baseline": {
+      "accuracy": 0.468,
+      "macro_f1": 0.456
+    }
+  },
+  "data_quality": {
+    "rows": 95697,
+    "duplicate_symbol_date_rows_removed": 0,
+    "invalid_price_or_volume_rows_removed": 0,
+    "returns_excluded_gap_or_unscaled_action": 8,
+    "abs_return_over_20pct_remaining": 5
+  }
+}

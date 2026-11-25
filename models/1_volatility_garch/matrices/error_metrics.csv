@@ -1,0 +1,5 @@
+comparison,n,rmse_vol_points,mae_vol_points,median_abs_pct_error
+GARCH vs next 10 days,2500.0,10.907,8.433,28.2
+Baseline vs next 10 days,2500.0,11.295,8.464,27.31
+GARCH vs next 30 days,2300.0,8.316,6.409,19.86
+Baseline vs next 30 days,2300.0,9.534,7.355,23.24

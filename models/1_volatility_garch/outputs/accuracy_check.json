@@ -1,0 +1,12 @@
+{
+  "garch_calibrated": {
+    "accuracy": 0.442,
+    "macro_f1": 0.441
+  },
+  "baseline_calibrated": {
+    "accuracy": 0.466,
+    "macro_f1": 0.464
+  },
+  "perfect_forecaster_ceiling_using_forecast_spread": 0.626,
+  "perfect_forecaster_ceiling_using_realised_30d_spread": 0.671
+}
