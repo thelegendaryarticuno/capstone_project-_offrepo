@@ -1,0 +1,21 @@
+{
+  "release": "models-v1.0.0",
+  "repo": "thelegendaryarticuno/capstone_project-_offrepo",
+  "files": [
+    {
+      "name": "volatility_model.joblib",
+      "bytes": 101713,
+      "sha256": "95de88a0fe72c14ef8281fe71eeec436538d3388d42f86194059c9db031a89c1"
+    },
+    {
+      "name": "anomaly_model.joblib",
+      "bytes": 82735638,
+      "sha256": "e773495965639e8b12034adfe6270bfaae0dca9c4198b874902ef50a01c0ba79"
+    },
+    {
+      "name": "sentiment_model.joblib",
+      "bytes": 247138729,
+      "sha256": "5b3312a416f87ae11eb1454a3c79d62c5a301cac3399e78878afba1d979f7d2b"
+    }
+  ]
+}
